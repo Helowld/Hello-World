@@ -2,7 +2,10 @@
 
 ## Guidelines for Merging
 
-The PR which will be having the specific file name as given in the issue, the one whose commit descriptions are relevant, and the code is readable, would be merged.
+- fileName should be hello_world.extension like hello_world.c 
+- the program has to contain the comments which has to explain the program precisely, for example check this out [hello_world.c](https://github.com/rustiever/Hello-World/blob/main/hello_world.c).
+- add respective language's official website link and resource material to get started.(For some language official websites or resource materials won't be availabale, in that case add a popular website which has resource material to respective language)
+- PR which will be having the specific file name as given in the issue, the one whose commit descriptions are relevant, and the code is readable, would be merged. 
 
 For docs, make sure that you use markdown syntax. Checkout these links: [Markdown Guide](https://www.markdownguide.org/), [Markdown Cheat-Sheet](https://www.markdownguide.org/cheat-sheet/).
 

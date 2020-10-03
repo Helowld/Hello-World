@@ -5,7 +5,6 @@ An attempt to create Hello-World program in all available programming languages
 
 - How to contribute to open source
 - Version Control
-- Since we have quite a few branches, you will learn how to work with branches
 - Overall, a great learning experience for y'all!
 
 ## How to contribute?
