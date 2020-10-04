@@ -26,24 +26,9 @@ Top programming languages that can be found in this project:
 </summary>
 
 -	C
--	Java
 -	Python
--	C++
--	C#
--	Visual Basic
--	JavaScript
+-	Kotlin
 -	PHP
--	R
--	SQL
 -	Go
--	Swift
--	Perl
--	Assembly language
--	Ruby
--	MATLAB
--	Groovy
--	Rust
--	Objective-C
--	Dart
 
 </details>
