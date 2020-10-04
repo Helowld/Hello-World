@@ -1,4 +1,5 @@
-//#include is a preprocessor command that to include <iostream.h> file in this program.
+//standard Cpp website : https://isocpp.org/get-started
+
 //iostram allows to input/output data. it acts like <stdio.h> in C.
 #include <iostream>
 
@@ -11,11 +12,10 @@ using namespace std;
 int main(void)
 {
     //cout displays the string inside quotation, after '<<' character
-    //endl means break to new line
-    cout << "hello, world!" << endl;
+    //endl means 'break to new line' (it acts like pressing enter)
+    cout << "hello, world!" << endl; //Cpp program needs semicolon after each command
 
-    // the return 0 gives the status of the ended program.
-    // the program ends with this statement.
+    // at the end of program, Cpp returns finished program status by 'return 0'
     return 0;
 }
 
