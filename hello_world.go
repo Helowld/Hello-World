@@ -1,3 +1,5 @@
+// Official Website: https://golang.org/
+
 /* package main - Every go file must start with the package name statement.
  * Packages are used to provide code compartmentalisation and reusability.
  * 'main' is the entry point for every go file.
