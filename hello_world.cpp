@@ -1,6 +1,7 @@
 //standard Cpp website : https://isocpp.org/get-started
 
-//iostram allows to input/output data. it acts like <stdio.h> in C.
+//#include <iostream> includes standard input/output library to cpp file
+//it allows to display data, or read your input
 #include <iostream>
 
 //namespace defines C++ standard library function.
