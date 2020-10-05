@@ -1,22 +1,17 @@
 /*
  * Oracle Java official site: https://www.java.com/zh-TW/
+ * Oracle JDK official site: https://www.oracle.com/tw/java/technologies/javase-downloads.html
  * OpenJDK official site: https://openjdk.java.net/
  */
 
 // Java Class name should start at capital
 public class HelloWorld{
-	/*
-	This is a comment
-	*/
-	// This is a comment too
 	// main function
+	// If a main function in class, it should be declared as following format
 	public static void main(String []args){
 		System.out.println("Hello World");  // show Hello World on terminal (with newline)
-		System.out.print("Hello World");  // show Hello World on terminal
-		System.out.print("!");  // show ! on terminal
 	}
 }
 
 // output:
 // Hello world
-// Hello World!
