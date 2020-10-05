@@ -1,6 +1,9 @@
 ; ----------------------------------------------------------------------------------------
 ; Assembly Hello World for 64-bit Linux
 ; nasm -felf64 hello_world.asm && ld hello_world.o && ./a.out
+;
+; x64 Assembly introduction: https://software.intel.com/content/www/us/en/develop/articles/introduction-to-x64-assembly.html
+; Linux system calls: https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md
 ; ----------------------------------------------------------------------------------------
 
           global    _start
