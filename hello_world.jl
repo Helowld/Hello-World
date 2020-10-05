@@ -4,10 +4,11 @@
 println("Hello world!")
 
 #From Julia REPL
-#julia> include("path/to/hello_world.jl")
+# julia> include("/path/to/hello_world.jl")
 
 #From terminal 
-#$ /path/to/julia hello_world.jl
+# $ /path/to/julia hello_world.jl
 
 #Output: Hello world!
-#Here's some more info/tutorials: https://juliabyexample.helpmanual.io/
+
+#Here is some more information: https://juliabyexample.helpmanual.io/
