@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Learning page for beginners: https://linuxconfig.org/bash-scripting-tutorial-for-beginners
+#
 # Never underestimate the power of simple and small bash scripts
 # How to run this bash file:
 #   Windows     bash hello_world.sh
