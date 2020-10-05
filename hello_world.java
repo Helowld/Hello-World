@@ -1,6 +1,6 @@
 /*
  * Oracle Java official site: https://www.java.com/zh-TW/
- * Oracle JDK official site: https://www.oracle.com/tw/java/technologies/javase-downloads.html
+ * Oracle JDK official site: https://www.oracle.com/java/technologies/javase-downloads.html
  * OpenJDK official site: https://openjdk.java.net/
  */
 
