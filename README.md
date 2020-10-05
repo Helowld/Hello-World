@@ -20,12 +20,14 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 <!-- <summary>
 </summary> -->
 
+-   Bash
 -	C
-- C++
+-   C++
 -	Python
 -	Kotlin
 -	PHP
 -	Go
+- Julia
 -	Java
 
 </details>
