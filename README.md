@@ -17,17 +17,14 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 ## Implemented Languages List:
 <details>
-<!-- <summary>
-</summary> -->
-
--   Bash
+- Bash
 -	C
--   C++
+- C++
 -	Python
 -	Kotlin
 -	PHP
 -	Go
 - Julia
+- Assembly
 -	Java
-
 </details>
