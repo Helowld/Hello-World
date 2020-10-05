@@ -28,5 +28,6 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 -	PHP
 -	Go
 - Julia
+-	Java
 
 </details>
