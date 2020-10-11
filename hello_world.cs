@@ -18,6 +18,7 @@ namespace HelloWorld {
     } 
 } 
 
+// For more info check this microsoft's official website https://docs.microsoft.com/en-us/dotnet/csharp/
 // For more info check this https://www.programiz.com/csharp-programming/hello-world
 // For refernces to that check the site https://www.geeksforgeeks.org/hello-world-in-c-sharp/
 
