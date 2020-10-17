@@ -7,7 +7,7 @@ fn main() {
 }
 
 // for more info, check this : https://www.rust-lang.org/
-// to delve deeper in the documentation: https://doc.rust-lang.org/book/title-page.html
+// for the documentation: https://doc.rust-lang.org/book/title-page.html
 // for an explanation on macros : https://doc.rust-lang.org/book/ch19-06-macros.html
 
 // Output :
