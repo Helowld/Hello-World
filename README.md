@@ -26,6 +26,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [Dart](https://github.com/rustiever/Hello-World/blob/main/hello_world.dart)
 - [Fortran](https://github.com/rustiever/Hello-World/blob/main/hello_world.f)
 - [Go](https://github.com/rustiever/Hello-World/blob/main/hello_world.go)
+- [J#](https://github.com/rustiever/Hello-World/blob/main/hello_world.jsl)
 - [Java](https://github.com/rustiever/Hello-World/blob/main/hello_world.java)
 - [JavaScript](https://github.com/rustiever/Hello-World/blob/main/hello_world.js)
 - [Julia](https://github.com/rustiever/Hello-World/blob/main/hello_world.jl)
