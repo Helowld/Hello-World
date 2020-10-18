@@ -24,6 +24,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [C#](https://github.com/rustiever/Hello-World/blob/main/hello_world.cs)
 - [Clojure](https://github.com/rustiever/Hello-World/blob/main/hello_world.clj)
 - [Dart](https://github.com/rustiever/Hello-World/blob/main/hello_world.dart)
+- [Fortran](https://github.com/rustiever/Hello-World/blob/main/hello_world.f)
 - [Go](https://github.com/rustiever/Hello-World/blob/main/hello_world.go)
 - [Java](https://github.com/rustiever/Hello-World/blob/main/hello_world.java)
 - [JavaScript](https://github.com/rustiever/Hello-World/blob/main/hello_world.js)
@@ -31,10 +32,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [Kotlin](https://github.com/rustiever/Hello-World/blob/main/hello_world.kt)
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 - [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
-- [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R)
+- [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
+- [Rust](https://github.com/rustiever/Hello-World/blob/main/hello_world.rs)
 - [Swift](https://github.com/rustiever/Hello-World/blob/main/hello_world.swift)
 - [Typescript](https://github.com/rustiever/Hello-World/blob/main/hello_world.ts)
-- [Rust](https://github.com/rustiever/Hello-World/blob/main/hello_world.rs)
 </details>
-
-
