@@ -17,7 +17,6 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 ## Implemented Languages List:
 <details>
-
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
 - [Bash](https://github.com/rustiever/Hello-World/blob/main/hello_world.sh)
 - [C](https://github.com/rustiever/Hello-World/blob/main/hello_world.c)
@@ -35,6 +34,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R)
 - [Swift](https://github.com/rustiever/Hello-World/blob/main/hello_world.swift)
 - [Typescript](https://github.com/rustiever/Hello-World/blob/main/hello_world.ts)
+- [Rust](https://github.com/rustiever/Hello-World/blob/main/hello_world.rs)
 </details>
 
 
