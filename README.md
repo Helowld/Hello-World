@@ -17,18 +17,25 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 ## Implemented Languages List:
 <details>
-- Bash
--	C
-- C++
-- C#
--	Python
--	Kotlin
--	PHP
--	Go
-- Julia
-- Assembly
--	Java
-- Typescript
--	JavaScript
-- V Lang
+- [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
+- [Bash](https://github.com/rustiever/Hello-World/blob/main/hello_world.sh)
+- [C](https://github.com/rustiever/Hello-World/blob/main/hello_world.c)
+- [C++](https://github.com/rustiever/Hello-World/blob/main/hello_world.cpp)
+- [C#](https://github.com/rustiever/Hello-World/blob/main/hello_world.cs)
+- [Clojure](https://github.com/rustiever/Hello-World/blob/main/hello_world.clj)
+- [Dart](https://github.com/rustiever/Hello-World/blob/main/hello_world.dart)
+- [Fortran](https://github.com/rustiever/Hello-World/blob/main/hello_world.f)
+- [Go](https://github.com/rustiever/Hello-World/blob/main/hello_world.go)
+- [J#](https://github.com/rustiever/Hello-World/blob/main/hello_world.jsl)
+- [Java](https://github.com/rustiever/Hello-World/blob/main/hello_world.java)
+- [JavaScript](https://github.com/rustiever/Hello-World/blob/main/hello_world.js)
+- [Julia](https://github.com/rustiever/Hello-World/blob/main/hello_world.jl)
+- [Kotlin](https://github.com/rustiever/Hello-World/blob/main/hello_world.kt)
+- [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
+- [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
+- [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
+- [Rust](https://github.com/rustiever/Hello-World/blob/main/hello_world.rs)
+- [Swift](https://github.com/rustiever/Hello-World/blob/main/hello_world.swift)
+- [Typescript](https://github.com/rustiever/Hello-World/blob/main/hello_world.ts)
+- [Vlang](https://github.com/vlang/v/blob/master/doc/docs.md)
 </details>
