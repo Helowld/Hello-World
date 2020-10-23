@@ -8,6 +8,10 @@ fn main() {
     println('Hello World')
 }
 
+/* main() function is the first to get executed in V lang.
+   println is used to print the text on console.
+*/
+
 /*V lang is very similar to Go. On execution, it checks for the main function as it does 
 in other languages like Go and Java. It executes the code written in main function. The Syntax
 of V lang is very simple and easy to understand.
