@@ -32,6 +32,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [JavaScript](https://github.com/rustiever/Hello-World/blob/main/hello_world.js)
 - [Julia](https://github.com/rustiever/Hello-World/blob/main/hello_world.jl)
 - [Kotlin](https://github.com/rustiever/Hello-World/blob/main/hello_world.kt)
+- [Perl](https://www.perl.org/docs.html)
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 - [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
 - [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
