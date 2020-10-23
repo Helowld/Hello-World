@@ -9,7 +9,7 @@ fn main() {
 }
 
 /* main() function is the first to get executed in V lang.
-   println is used to print the text on console.
+   println() is used to print the text on console.
 */
 
 /*V lang is very similar to Go. On execution, it checks for the main function as it does 
