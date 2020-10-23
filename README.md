@@ -30,4 +30,5 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 -	Java
 - Typescript
 -	JavaScript
+-   Perl
 </details>
