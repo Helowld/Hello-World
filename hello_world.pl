@@ -12,11 +12,8 @@ use warnings;
   
 # Print function  
 print("Hello World\n"); 
-
-# Output: "Hello World"
-#
 # The print() is used to print the text in the console.
-#
+# Output: "Hello World"
 # Command to execute: perl hello_world.pl 
-#
+
 
