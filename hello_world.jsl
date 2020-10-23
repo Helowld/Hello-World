@@ -1,0 +1,23 @@
+//Official Site
+//https://docs.microsoft.com/en-us/previous-versions/msdn10/bb188593(v=msdn.10)
+
+//Define namespace
+package HelloWorld;
+
+//Class name
+public class HelloWorld
+{
+	// main function
+	// If a main function in class, it should be declared as following format
+	public static void main(String[] args)
+	{
+		System.Console.Write("Hello World!");
+	}
+}
+
+//OUTPUT
+//Hello World!
+
+//Learning resouces
+//https://www.codeproject.com/Articles/1440/Introduction-to-Visual-J-NET
+//https://flylib.com/books/en/4.418.1.163/1/
