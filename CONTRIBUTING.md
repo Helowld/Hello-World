@@ -1,8 +1,17 @@
-# Contributions
+Contributing to Hello-World
+=======================
+
+Welcome
+-------
+
+We invite you to join our team! Everyone is welcome to contribute code
+via pull requests, to file issues on GitHub.
 
 ## Guidelines for Merging
 
-- fileName should be hello_world.extension like hello_world.c 
+- while giving the Pull requests please follow the template [PULL_REQUEST_TEMPLATE.md](./PULL_REQUEST_TEMPLATE.md)
+- fileName should be hello_world.extension like hello_world.c(extension should be in lowercase)
+- you should consider the reader as newbies, so explain the code according to that
 - the program has to contain the comments which has to explain the program precisely, for example check this out [hello_world.c](https://github.com/rustiever/Hello-World/blob/main/hello_world.c).
 - add respective language's official website link and resource material to get started.(For some language official websites or resource materials won't be availabale, in that case add a popular website which has resource material to respective language)
 - PR which will be having the specific file name as given in the issue, the one whose commit descriptions are relevant, and the code is readable, would be merged. 
