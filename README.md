@@ -27,6 +27,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 -	Go
 - Julia
 - R
+- Swift
 - Assembly
 -	Java
 </details>
