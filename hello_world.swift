@@ -13,3 +13,5 @@ print("Hello, World!")
 
 // OUTPUT :
 // Hello, World!
+
+//If you want to run this program in your computer, make sure that Swift and Xcode is properly installed.
