@@ -19,6 +19,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 <details>
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
 - [Bash](https://github.com/rustiever/Hello-World/blob/main/hello_world.sh)
+- [Brainfuck](https://gist.github.com/roachhd/dce54bec8ba55fb17d3a)
 - [C](https://github.com/rustiever/Hello-World/blob/main/hello_world.c)
 - [C++](https://github.com/rustiever/Hello-World/blob/main/hello_world.cpp)
 - [C#](https://github.com/rustiever/Hello-World/blob/main/hello_world.cs)
