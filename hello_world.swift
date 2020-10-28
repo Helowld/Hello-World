@@ -1,8 +1,17 @@
+// Hello, World! Program
+
+// 'import' keyword allows you to access all the symbols defined inside a framework.
+import Swift
+
+// The below line is called a function in Swift. More specifically, a print function.
+// In swift, print means "show on the screen". The above code prints the string inside quotation marks, i.e "Hello, World!" on the screen.
+print("Hello, World!")
+
+
+// For more info check this official website https://swift.org/
+// For more info check this https://www.programiz.com/swift-programming
+
+// OUTPUT :
+// Hello, World!
 
 //If you want to run this program in your computer, make sure that Swift and Xcode is properly installed.
-import Swift // import keyword allows you to access all the symbols defined inside a framework,
-print("Hello, World!")
-// The above line is called a function in Swift. More specifically, a print function.
-// In swift, print means "show on the screen". The above code prints the string inside quotation marks, i.e "Hello, World!" on the screen.
-
-official website:https://swift.org/
