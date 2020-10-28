@@ -48,6 +48,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [Kotlin](https://github.com/rustiever/Hello-World/blob/main/hello_world.kt)
 
+- [Lua](https://github.com/sangramsecure/Hello-World/blob/main/hello_world.lua)
+
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 
 - [Perl](https://github.com/rustiever/Hello-World/blob/main/hello_world.pl)
