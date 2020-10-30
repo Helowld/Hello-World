@@ -6,6 +6,7 @@ begin
 end;
 /
 
--- You need to set serveroutput on if you want to see output from console, for more info, visit https://docs.oracle.com/database/121/LNPLS/toc.htm
+-- You need to set serveroutput on if you want to see output from console.
+-- for more info, visit https://docs.oracle.com/database/121/LNPLS/toc.htm
 -- OUTPUT:
 -- Hello, World!
