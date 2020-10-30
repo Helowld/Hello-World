@@ -54,6 +54,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [Perl](https://github.com/rustiever/Hello-World/blob/main/hello_world.pl)
 
+- [PL/SQL](https://github.com/rustiever/Hello-World/blob/main/hello_world.sql)
+
 - [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
 
 - [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
