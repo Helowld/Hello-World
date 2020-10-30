@@ -17,7 +17,6 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 ## Implemented Languages List[24]:
 <details>
-
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
 
 - [Bash](https://github.com/rustiever/Hello-World/blob/main/hello_world.sh)
@@ -52,9 +51,9 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 
-- [Perl](https://github.com/rustiever/Hello-World/blob/main/hello_world.pl)
-
 - [PL/SQL](https://github.com/rustiever/Hello-World/blob/main/hello_world.sql)
+
+- [Perl](https://github.com/rustiever/Hello-World/blob/main/hello_world.pl)
 
 - [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
 
