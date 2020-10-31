@@ -56,6 +56,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
 
+- [Ruby](https://github.com/rustiever/Hello-World/blob/main/hello_world.rb)
+
 - [Rust](https://github.com/rustiever/Hello-World/blob/main/hello_world.rs)
 
 - [Swift](https://github.com/rustiever/Hello-World/blob/main/hello_world.swift)
