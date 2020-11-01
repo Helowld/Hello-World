@@ -15,7 +15,7 @@ Please check [CONTRIBUTING.md](./CONTRIBUTING.md) for further instructions.
 
 All issues are open issues. If there are multiple PR's trying to solve an issue, they will be merged on a first-come, first-serve basis. The PR which will be passing all the criteria mentioned in [CONTRIBUTING.md](./CONTRIBUTING.md) would be getting merged.
 
-## Implemented Languages List[26]:
+## Implemented Languages List[27]:
 <details>
 
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
@@ -69,5 +69,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [Typescript](https://github.com/rustiever/Hello-World/blob/main/hello_world.ts)
 
 - [V](https://github.com/vlang/v/blob/master/doc/docs.md)
+
+- [XQuery](https://github.com/rustiever/Hello-World/blob/main/hello_world.xquery)
 
 </details>
