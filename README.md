@@ -72,6 +72,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [V](https://github.com/vlang/v/blob/master/doc/docs.md)
 
+- [Verilog HDL](https://github.com/rustiever/Hello-World/blob/main/hello_world.vhd)
+
 - [XQuery](https://github.com/rustiever/Hello-World/blob/main/hello_world.xquery)
 
 </details>
