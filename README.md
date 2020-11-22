@@ -15,7 +15,7 @@ Please check [CONTRIBUTING.md](./CONTRIBUTING.md) for further instructions.
 
 All issues are open issues. If there are multiple PR's trying to solve an issue, they will be merged on a first-come, first-serve basis. The PR which will be passing all the criteria mentioned in [CONTRIBUTING.md](./CONTRIBUTING.md) would be getting merged.
 
-## Implemented Languages List[28]:
+## Implemented Languages List[29]:
 <details>
 
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
@@ -49,6 +49,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [Kotlin](https://github.com/rustiever/Hello-World/blob/main/hello_world.kt)
 
 - [Lua](https://github.com/sangramsecure/Hello-World/blob/main/hello_world.lua)
+
+- [Malbolge](https://github.com/sangramsecure/Hello-World/blob/main/hello_world.mal)
 
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 
