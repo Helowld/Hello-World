@@ -17,7 +17,6 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 ## Implemented Languages List[32]:
 <details>
-
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
 
 - [Bash](https://github.com/rustiever/Hello-World/blob/main/hello_world.sh)
@@ -56,7 +55,7 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [Objective-C](https://github.com/rustiever/Hello-World/blob/main/hello_world.m)
 
-- [ocaml](https://github.com/rustiever/Hello-World/blob/main/hello_world.ml)
+- [Ocaml](https://github.com/rustiever/Hello-World/blob/main/hello_world.ml)
 
 - [PHP](https://github.com/rustiever/Hello-World/blob/main/hello_world.php)
 
@@ -83,5 +82,4 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 - [Verilog HDL](https://github.com/rustiever/Hello-World/blob/main/hello_world.vhd)
 
 - [XQuery](https://github.com/rustiever/Hello-World/blob/main/hello_world.xquery)
-
 </details>
