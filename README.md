@@ -29,6 +29,8 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [C](https://github.com/rustiever/Hello-World/blob/main/hello_world.c)
 
+- [Cobol](https://github.com/rustiever/Hello-World/blob/main/hello_world.cbl)
+
 - [Clojure](https://github.com/rustiever/Hello-World/blob/main/hello_world.clj)
 
 - [D](https://github.com/rustiever/Hello-World/blob/main/hello_world.d)
