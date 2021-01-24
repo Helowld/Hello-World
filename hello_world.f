@@ -5,7 +5,7 @@
 
 program hello_world
 	! The following line prints "Hello, World!". The asterisk indicates to the print statement that the items immediately following the comma after the asterisk should be printed in a format compatible with their type.
-	print *, "Hello World!"
+	print *, "Hello, World!"
 end program
 
 ! The extension for this file is .f, though, to compile this, any of the Fortran extensions (.for, .f90, .f95, etc.) can be used.

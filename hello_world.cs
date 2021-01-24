@@ -16,7 +16,7 @@ namespace HelloWorld
         {
             // WriteLine() is a method of the 'Console' class defined in the System namespace.
             // This is the piece of code that prints Hello World! to the output screen.
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello, World!");
         }
     }
 }
