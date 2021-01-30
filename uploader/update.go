@@ -5,56 +5,91 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
-	"regexp"
-	"runtime"
+	"sort"
 	"strconv"
 	"strings"
 )
 
 func main() {
 	filePath := "./README.md"
-	re, err := regexp.Compile(`List\[[0-9]{1,2}\]`)
 	read, err := ioutil.ReadFile(filePath)
-	if err != nil {
-		return
-	}
-	if runtime.GOOS == "windows" {
-		fmt.Println("Can't Execute this on a windows machine")
-	} else {
-		execute()
-	}
+	isError(err)
+	content := string(read)
+
 	args := os.Args[1:]
 	fmt.Println(args)
 	if n := len(args); n == 0 || args[0] == "" {
-		panic("empty name")
+		panic("Please specify the language name")
+	} else if n > 1 {
+		panic("expected only one argument")
 	}
 
-	content := string(read)
-	loc := re.FindStringIndex(content)
-	// fmt.Println(loc)
-	listOfLanguages, err := strconv.Atoi(content[loc[0]+5 : loc[1]-1])
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Println(listOfLanguages)
-	newContents := strings.Replace(content, strconv.Itoa(listOfLanguages), strconv.Itoa(listOfLanguages+1), 1)
-	fmt.Println(newContents[:700])
-
-	// err = ioutil.WriteFile(filePath, []byte(newContents), 0)
-	// if err != nil {
-	// 	panic(err)
-	// }
+	do(&content, args[0])
+	fmt.Println(content)
+	fmt.Println("Press y to update the file")
+	var write string
+	fmt.Scanln(&write)
+	writeToFile(write, &content)
 
 	// printContents()
 }
 
-func isError(err error) bool {
-	if err != nil {
-		fmt.Println(err.Error())
+func writeToFile(write string, newContents *string) {
+	filePath := "./README.md"
+	yes := "yY"
+	if strings.Contains(write, yes) {
+		err := ioutil.WriteFile(filePath, []byte(*newContents), 0)
+		isError(err)
 	}
-	return (err != nil)
+
+}
+
+func do(content *string, pName string) {
+	s := *content
+	if fileName := execute(); fileName != "" && strings.HasPrefix(fileName, "hello_world.") {
+		path := "- [" + pName + "](https://github.com/rustiever/Hello-World/blob/main/" + strings.Trim(fileName, "\n") + ")"
+		i := strings.Index(s, "<details>")
+		j := strings.Index(s, "</details>")
+		n := strings.Index(s, "List[")
+		num := s[n+5 : n+7]
+		k := s[i+10 : j-1]
+		l := strings.Split(k, "\n")
+		l = append(l, path)
+		sort.Strings(l)
+		var pos int
+		flag := false
+		for m, n := range l {
+			if n != "" {
+				l[m] += "\n"
+				if flag == false {
+					l[m] = "\n" + l[m]
+					pos = m
+				}
+				flag = true
+			}
+		}
+		l = l[pos:]
+		m := strings.Join(l, "\n")
+		ni, err := strconv.Atoi(num)
+		isError(err)
+		ni += 1
+		*content = strings.Replace(s, num, strconv.Itoa(ni), 1)
+		*content = strings.Replace(*content, k, m, 1)
+		// println(strings.Replace(s, k, m, 1))
+	} else {
+		println(fileName)
+	}
+}
+
+func execute() string {
+	out, err := exec.Command("git", "ls-files", "--others", "--exclude-standard").Output()
+
+	if err != nil {
+		fmt.Printf("%s", err)
+		panic("not found the command")
+	}
+	output := string(out)
+	return output
 }
 
 func printContents() {
@@ -64,23 +99,10 @@ func printContents() {
 	}
 	fmt.Println("CONTENTS:", string(data))
 }
-func execute() {
-
-	// here we perform the pwd command.
-	// we can store the output of this in our out variable
-	// and catch any errors in err
-	out, err := exec.Command("git", "status").Output()
-
-	// if there is an error with our execution
-	// handle it here
+func isError(err error) bool {
 	if err != nil {
-		fmt.Printf("%s", err)
-		panic("not found the command")
+		fmt.Println(err.Error())
+		panic(err)
 	}
-	// as the out variable defined above is of type []byte we need to convert
-	// this to a string or else we will see garbage printed out in our console
-	// this is how we convert it to a string
-	fmt.Println("Command Successfully Executed")
-	output := string(out[:])
-	fmt.Println(output)
+	return (err != nil)
 }
