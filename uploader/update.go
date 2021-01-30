@@ -29,17 +29,20 @@ func main() {
 	fmt.Println("Press y to update the file")
 	var write string
 	fmt.Scanln(&write)
-	writeToFile(write, &content)
+	println(strings.Contains("yY", write))
+	writeToFile(write, &content, filePath)
+	isError(err)
 
 	// printContents()
 }
 
-func writeToFile(write string, newContents *string) {
-	filePath := "./README.md"
+func writeToFile(write string, newContents *string, path string) {
 	yes := "yY"
-	if strings.Contains(write, yes) {
-		err := ioutil.WriteFile(filePath, []byte(*newContents), 0)
+	if strings.Contains(yes, write) {
+		err := ioutil.WriteFile(path, []byte(*newContents), 0)
 		isError(err)
+	} else {
+		println("why man")
 	}
 
 }
