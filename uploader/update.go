@@ -2,46 +2,44 @@ package main
 
 import (
 	"fmt"
+	"github.com/thatisuday/commando"
 	"io/ioutil"
-	"os"
+	// "os"
 	"os/exec"
 	"sort"
 	"strconv"
 	"strings"
 )
 
+const (
+	filePath string = "./README.md"
+)
+
 func main() {
-	filePath := "./README.md"
-	read, err := ioutil.ReadFile(filePath)
-	isError(err)
-	content := string(read)
 
-	args := os.Args[1:]
-	fmt.Println(args)
-	if n := len(args); n == 0 || args[0] == "" {
-		panic("Please specify the language name")
-	} else if n > 1 {
-		panic("expected only one argument")
-	}
+	// args := os.Args[1:]
+	// fmt.Println(args)
+	// if n := len(args); n == 0 || args[0] == "" {
+	// panic("Please specify the language name")
+	// } else if n > 1 {
+	// panic("expected only one argument")
+	// }
 
-	do(&content, args[0])
-	fmt.Println(content)
-	fmt.Println("Press y to update the file")
-	var write string
-	fmt.Scanln(&write)
-	writeToFile(write, &content)
+	commando.SetExecutableName("updater").SetVersion("0.0.1").SetDescription("Use this tool to update the Readme file after adding new language")
+	commando.Register(nil).AddArgument("name", "language name", "").SetAction(func(action map[string]commando.ArgValue, flag map[string]commando.FlagValue) {
+		read, err := ioutil.ReadFile(filePath)
+		isError(err)
+		content := string(read)
+		do(&content, action["name"].Value)
+		fmt.Println(content[23])
+		// fmt.Println("Press y to update the file")
+		// var write string
+		// fmt.Scanln(&write)
+		// writeToFile(write, &content)
+	})
 
 	// printContents()
-}
-
-func writeToFile(write string, newContents *string) {
-	filePath := "./README.md"
-	yes := "yY"
-	if strings.Contains(write, yes) {
-		err := ioutil.WriteFile(filePath, []byte(*newContents), 0)
-		isError(err)
-	}
-
+	commando.Parse(nil)
 }
 
 func do(content *string, pName string) {
@@ -78,6 +76,7 @@ func do(content *string, pName string) {
 		// println(strings.Replace(s, k, m, 1))
 	} else {
 		println(fileName)
+		println(pName)
 	}
 }
 
@@ -105,4 +104,12 @@ func isError(err error) bool {
 		panic(err)
 	}
 	return (err != nil)
+}
+func writeToFile(write string, newContents *string) {
+	yes := "yY"
+	if strings.Contains(write, yes) {
+		err := ioutil.WriteFile(filePath, []byte(*newContents), 0)
+		isError(err)
+	}
+
 }
