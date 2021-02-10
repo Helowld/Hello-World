@@ -15,7 +15,7 @@ Please check [CONTRIBUTING.md](./CONTRIBUTING.md) for further instructions.
 
 All issues are open issues. If there are multiple PR's trying to solve an issue, they will be merged on a first-come, first-serve basis. The PR which will be passing all the criteria mentioned in [CONTRIBUTING.md](./CONTRIBUTING.md) would be getting merged.
 
-## Implemented Languages List[40]:
+## Implemented Languages List[41]:
 <details>
 
 - [Assembly](https://github.com/rustiever/Hello-World/blob/main/hello_world.asm)
@@ -70,13 +70,15 @@ All issues are open issues. If there are multiple PR's trying to solve an issue,
 
 - [PL/SQL](https://github.com/rustiever/Hello-World/blob/main/hello_world.sql)
 
+- [Pascal](https://github.com/rustiever/Hello-World/blob/main/hello_world.ps)
+
 - [Perl](https://github.com/rustiever/Hello-World/blob/main/hello_world.pl)
 
 - [Python](https://github.com/rustiever/Hello-World/blob/main/hello_world.py)
 
 - [Q#](https://github.com/rustiever/Hello-World/blob/main/hello_world.qs)
 
-- [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.R) 
+- [R](https://github.com/rustiever/Hello-World/blob/main/hello_world.r) 
 
 - [Ruby](https://github.com/rustiever/Hello-World/blob/main/hello_world.rb)
 

@@ -1,0 +1,28 @@
+{Official Website:http://www.pascal-programming.info/index.php}
+program HelloWorld;
+uses crt;
+
+(* Here the main program block starts *)
+begin
+   writeln('Hello, World!');
+   readkey;
+end.
+
+(*
+The first line of the program program HelloWorld; indicates the name of the program.
+
+The second line of the program uses crt; is a preprocessor command, which tells the compiler to include the crt unit before going to actual compilation.
+
+The next lines enclosed within begin and end statements are the main program block. Every block in Pascal is enclosed within a begin statement and an end statement. However, the end statement indicating the end of the main program is followed by a full stop (.) instead of semicolon (;).
+
+The begin statement of the main program block is where the program execution begins.
+
+The lines within (*...*) will be ignored by the compiler and it has been put to add a comment in the program.
+
+The statement writeln('Hello, World!'); uses the writeln function available in Pascal which causes the message "Hello, World!" to be displayed on the screen.
+
+The statement readkey; allows the display to pause until the user presses a key. It is part of the crt unit. A unit is like a library in Pascal.
+
+The last statement end. ends your program.
+
+*)
