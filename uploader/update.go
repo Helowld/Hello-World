@@ -2,8 +2,10 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 	"os/exec"
 	"sort"
@@ -13,8 +15,11 @@ import (
 	"github.com/thatisuday/commando"
 )
 
+const (
+	filePath string = "../README.md"
+)
+
 func main() {
-	filePath := "../README.md"
 	read, err := ioutil.ReadFile(filePath)
 	isError(err)
 	content := string(read)
@@ -26,8 +31,9 @@ func main() {
 			do(&content, action["name"].Value)
 			fmt.Println(content)
 			if input("Update the file?(y/N)") {
-				writeToFile(&content, filePath)
+				writeToFile(&content)
 				isError(err)
+				fmt.Println("File Updated Successfully")
 			} else {
 				fmt.Println("File Update is cancelled")
 			}
@@ -42,56 +48,58 @@ func input(stmt string) bool {
 	isError(err)
 	return strings.Contains("yY", string(char))
 }
-func writeToFile(newContents *string, path string) {
-	err := ioutil.WriteFile(path, []byte(*newContents), 0)
+func writeToFile(newContents *string) {
+	err := ioutil.WriteFile(filePath, []byte(*newContents), 0)
 	isError(err)
 }
 
 func do(content *string, pName string) {
 	s := *content
-	if fileName := execute(); fileName != "" && strings.HasPrefix(fileName, "hello_world.") {
-		path := "- [" + pName + "](https://github.com/rustiever/Hello-World/blob/main/" + strings.Trim(fileName, "\n") + ")"
-		i := strings.Index(s, "<details>")
-		j := strings.Index(s, "</details>")
-		n := strings.Index(s, "List[")
-		num := s[n+5 : n+7]
-		k := s[i+10 : j-1]
-		l := strings.Split(k, "\n")
-		l = append(l, path)
-		sort.Strings(l)
-		var pos int
-		flag := false
-		counter := 0
-		for m, n := range l {
-			if n != "" {
-				counter++
-				l[m] += "\n"
-				if !flag {
-					l[m] = "\n" + l[m]
-					pos = m
-				}
-				flag = true
+	fileName, err := executeGit()
+	isError(err)
+	path := "- [" + pName + "](https://github.com/rustiever/Hello-World/blob/main/" + strings.Trim(fileName, "\n") + ")"
+	i := strings.Index(s, "<details>")
+	j := strings.Index(s, "</details>")
+	n := strings.Index(s, "List[")
+	num := s[n+5 : n+7]
+	k := s[i+10 : j-1]
+	l := strings.Split(k, "\n")
+	l = append(l, path)
+	sort.Strings(l)
+	var pos int
+	flag := false
+	counter := 0
+	for m, n := range l {
+		if n != "" {
+			counter++
+			l[m] += "\n"
+			if !flag {
+				l[m] = "\n" + l[m]
+				pos = m
 			}
+			flag = true
 		}
-		l = l[pos:]
-		m := strings.Join(l, "\n")
-		*content = strings.Replace(s, num, strconv.Itoa(counter), 1)
-		*content = strings.Replace(*content, k, m, 1)
-		// println(strings.Replace(s, k, m, 1))
-	} else {
-		println(fileName)
 	}
+	l = l[pos:]
+	m := strings.Join(l, "\n")
+	*content = strings.Replace(s, num, strconv.Itoa(counter), 1)
+	*content = strings.Replace(*content, k, m, 1)
 }
 
-func execute() string {
+func executeGit() (string, error) {
 	out, err := exec.Command("git", "ls-files", "--others", "--exclude-standard").Output()
+	isError(err)
+	output := strings.Split(string(out), "\n")
+	if len(output) == 2 {
+		if strings.HasPrefix(output[0], "hello_world.") {
+			return output[0], nil
+		} else {
 
-	if err != nil {
-		fmt.Printf("%s", err)
-		panic("not found the command")
+			return "", errors.New(`fileName must have prefix "hello_world."`)
+
+		}
 	}
-	output := string(out)
-	return output
+	return "", errors.New("multiple new files has been found ")
 }
 
 func printContents() {
@@ -103,8 +111,7 @@ func printContents() {
 }
 func isError(err error) bool {
 	if err != nil {
-		fmt.Println(err.Error())
-		panic(err)
+		log.Fatalln(err.Error())
 	}
 	return (err != nil)
 }
