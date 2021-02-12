@@ -27,10 +27,10 @@ func main() {
 	commando.SetExecutableName("updater").SetVersion("0.0.1").SetDescription("Use this tool to update the Readme file after adding new language")
 	commando.Register(nil).AddArgument("name", "language name", "").
 		SetAction(func(action map[string]commando.ArgValue, flag map[string]commando.FlagValue) {
-			println(action["name"].Value)
-			do(&content, action["name"].Value)
+			update(&content, action["name"].Value)
 			fmt.Println(content)
-			if input("Update the file?(y/N)") {
+			fmt.Println("updating the file is completed")
+			if input("Write the Update to file?(y/N)") {
 				writeToFile(&content)
 				isError(err)
 				fmt.Println("File Updated Successfully")
@@ -53,9 +53,9 @@ func writeToFile(newContents *string) {
 	isError(err)
 }
 
-func do(content *string, pName string) {
+func update(content *string, pName string) {
 	s := *content
-	fileName, err := executeGit()
+	fileName, err := ExecuteGit()
 	isError(err)
 	path := "- [" + pName + "](https://github.com/rustiever/Hello-World/blob/main/" + strings.Trim(fileName, "\n") + ")"
 	i := strings.Index(s, "<details>")
@@ -86,7 +86,7 @@ func do(content *string, pName string) {
 	*content = strings.Replace(*content, k, m, 1)
 }
 
-func executeGit() (string, error) {
+func ExecuteGit() (string, error) {
 	out, err := exec.Command("git", "ls-files", "--others", "--exclude-standard").Output()
 	isError(err)
 	output := strings.Split(string(out), "\n")
@@ -102,13 +102,6 @@ func executeGit() (string, error) {
 	return "", errors.New("multiple new files has been found ")
 }
 
-func printContents() {
-	data, err := ioutil.ReadFile("./README.md")
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("CONTENTS:", string(data))
-}
 func isError(err error) bool {
 	if err != nil {
 		log.Fatalln(err.Error())
