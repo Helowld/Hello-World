@@ -3,7 +3,7 @@
 // fn main() - the function that will be automatically executed when the file is directly executed
 fn main() {
     // println is a built-in macro (see docs on macro at the links up top) that recieves a string and outputs it to the display
-    println!("Hello, world!");
+    println!("Hello, World!");
 }
 
 // for more info, check this : https://www.rust-lang.org/

@@ -16,13 +16,14 @@ import (
 )
 
 const (
-	filePath string = "../README.md"
+	filePath string = "README.md"
 )
 
 func main() {
 	read, err := ioutil.ReadFile(filePath)
 	isError(err)
 	content := string(read)
+	println(content[0:10])
 
 	commando.SetExecutableName("updater").SetVersion("0.0.1").SetDescription("Use this tool to update the Readme file after adding new language")
 	commando.Register(nil).AddArgument("name", "language name", "").
