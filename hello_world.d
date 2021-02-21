@@ -10,7 +10,7 @@ void main()
 // This function is executed when the program runs.
 {
     // built-in function to print the quoted string
-    writeln("Hello, world without explicit compilations!"); 
+    writeln("Hello, World!"); 
 }
 
 // $ rdmd main.d
