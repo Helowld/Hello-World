@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 	"os/exec"
 	"sort"
@@ -23,10 +22,15 @@ func main() {
 	read, err := ioutil.ReadFile(filePath)
 	isError(err)
 	content := string(read)
-	println(content[0:10])
 
-	commando.SetExecutableName("updater").SetVersion("0.0.1").SetDescription("Use this tool to update the Readme file after adding new language")
-	commando.Register(nil).AddArgument("name", "language name", "").
+	commando.
+		SetExecutableName("hworld").
+		SetVersion("0.0.2").
+		SetDescription("Use this tool to update the Readme file after adding new language")
+
+	commando.
+		Register("add").
+		AddArgument("language name", "specify the language name", "").
 		SetAction(func(action map[string]commando.ArgValue, flag map[string]commando.FlagValue) {
 			update(&content, action["name"].Value)
 			fmt.Println(content)
@@ -39,6 +43,15 @@ func main() {
 				fmt.Println("File Update is cancelled")
 			}
 		})
+
+	commando.
+		Register("search").
+		SetShortDescription("this command searches for language argument").
+		AddArgument("language name", "name of the language", "").
+		SetAction(func(action map[string]commando.ArgValue, flag map[string]commando.FlagValue) {
+			fmt.Println("yet to implement")
+		})
+
 	commando.Parse(nil)
 }
 
@@ -56,7 +69,7 @@ func writeToFile(newContents *string) {
 
 func update(content *string, pName string) {
 	s := *content
-	fileName, err := ExecuteGit()
+	fileName, err := executeGit()
 	isError(err)
 	path := "- [" + pName + "](https://github.com/rustiever/Hello-World/blob/main/" + strings.Trim(fileName, "\n") + ")"
 	i := strings.Index(s, "<details>")
@@ -87,25 +100,24 @@ func update(content *string, pName string) {
 	*content = strings.Replace(*content, k, m, 1)
 }
 
-func ExecuteGit() (string, error) {
+func executeGit() (string, error) {
 	out, err := exec.Command("git", "ls-files", "--others", "--exclude-standard").Output()
 	isError(err)
 	output := strings.Split(string(out), "\n")
 	if len(output) == 2 {
 		if strings.HasPrefix(output[0], "hello_world.") {
 			return output[0], nil
-		} else {
-
-			return "", errors.New(`fileName must have prefix "hello_world."`)
-
 		}
+		return "", errors.New(`fileName must have prefix "hello_world."`)
+
 	}
 	return "", errors.New("multiple new files has been found ")
 }
 
 func isError(err error) bool {
 	if err != nil {
-		log.Fatalln(err.Error())
+		fmt.Println(err.Error())
+		os.Exit(1)
 	}
 	return (err != nil)
 }
