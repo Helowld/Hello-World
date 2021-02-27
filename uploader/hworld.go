@@ -30,9 +30,9 @@ func main() {
 
 	commando.
 		Register("add").
-		AddArgument("language name", "specify the language name", "").
+		AddArgument("lname", "specify the language name", "").
 		SetAction(func(action map[string]commando.ArgValue, flag map[string]commando.FlagValue) {
-			update(&content, action["name"].Value)
+			update(&content, action["lname"].Value)
 			fmt.Println(content)
 			fmt.Println("updating the file is completed")
 			if input("Write the Update to file?(y/N)") {
