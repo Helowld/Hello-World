@@ -1,5 +1,5 @@
 #!/usr/bin/lua              -- this line tells Linux to run this program with /usr/bin/lua
-print("Hello World!")       -- this line tells to print "Hello World"
+print("Hello, World!")       -- this line tells to print "Hello World"
 
 -- If you don’t have lua interpreter, install it as shown below.
 -- sudo apt-get install lua5.4

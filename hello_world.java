@@ -9,7 +9,7 @@ public class HelloWorld{
 	// main function
 	// If a main function in class, it should be declared as following format
 	public static void main(String []args){
-		System.out.println("Hello World");  // show Hello World on terminal (with newline)
+		System.out.println("Hello, World!");  // show Hello World on terminal (with newline)
 	}
 }
 
