@@ -11,7 +11,7 @@ use strict;
 use warnings; 
   
 # Print function  
-print("Hello World\n"); 
+print("Hello, World!"); 
 # The print() is used to print the text in the console.
 # Output: "Hello World"
 # Command to execute: perl hello_world.pl 
