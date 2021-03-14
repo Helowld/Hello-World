@@ -2,7 +2,7 @@
 declare
 begin
   -- dbms_output.put_line displays the string inside quotation
-  dbms_output.put_line('Hello World');
+  dbms_output.put_line('Hello, World!');
 end;
 /
 

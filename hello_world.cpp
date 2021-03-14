@@ -14,7 +14,7 @@ int main(void)
 {
     //cout displays the string inside quotation, after '<<' character
     //endl means 'break to new line' (it acts like pressing enter)
-    cout << "hello, world!" << endl; //Cpp program needs semicolon after each command
+    cout << "Hello, World!" << endl; //Cpp program needs semicolon after each command
 
     // at the end of program, Cpp returns finished program status by 'return 0'
     return 0;

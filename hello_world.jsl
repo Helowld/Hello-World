@@ -11,7 +11,7 @@ public class HelloWorld
 	// If a main function in class, it should be declared as following format
 	public static void main(String[] args)
 	{
-		System.Console.Write("Hello World!");
+		System.Console.Write("Hello, World!");
 	}
 }
 

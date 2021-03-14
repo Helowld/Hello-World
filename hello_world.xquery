@@ -1,5 +1,5 @@
 (: Hello World Program Using XQuery :)
-let $i := "Hello World!"
+let $i := "Hello, World!"
 return $i
 
 (: For more info, check this site https://www.tutorialspoint.com/xquery/index.htm :)
@@ -7,4 +7,4 @@ return $i
 
 
 (: Output : :)
-(: "Hello World!" :)
+(: "Hello, World!" :)

@@ -7,8 +7,8 @@
 object HelloWorld {
 // The main method is the entry point of a Scala program. The Java Virtual Machine requires a main method, named main, that takes one argument: an array of strings.
    def main(args: Array[String]) {
-      println("Hello, world!") // prints Hello World
+      println("Hello, World!") // prints Hello World
    }
 }
 // ~$ scala hello_world.scala
-// Output: Hello, world!
+// Output: Hello, World!

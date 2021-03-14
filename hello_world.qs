@@ -8,6 +8,6 @@ namespace Bell { // here Bell is project name
 
       @EntryPoint()
       operation HelloQ() : Unit {
-          Message("Hello, world!");
+          Message("Hello, World!");
       }
    }

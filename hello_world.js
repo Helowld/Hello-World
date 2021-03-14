@@ -7,4 +7,4 @@ console.log("Hello, World!");
 // For more info check this https://www.geeksforgeeks.org/javascript-console-log-with-examples/
 
 // OUTPUT:
-// Hello World!
+// Hello, World!

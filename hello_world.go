@@ -13,7 +13,7 @@ import "fmt"
 // The main function should always reside in the main package. The { and } indicate the start and end of the main function.
 func main() {
 	// fmt.Println("Hello World") - The Println function of the fmt package is used to write text to the standard output.
-	fmt.Println("Hello, world!")
+	fmt.Println("Hello, World!")
 }
 
 // ~$ go run hello_world.go

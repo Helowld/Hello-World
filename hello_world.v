@@ -8,10 +8,10 @@
 /// of V lang is very simple and easy to understand.
 
 fn main() { // main() function is the first to get executed in V
-    println('Hello World') // println() is used to print the text on console and aslo appends newline character at the end of the string
+    println('Hello, World!') // println() is used to print the text on console and aslo appends newline character at the end of the string
 }
 
 /*
 Command to execute: v run hello.v
-Output: Hello World
+Output: Hello, World!
 */

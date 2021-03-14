@@ -10,4 +10,4 @@
 #   chmod +x hello_world.sh
 
 # This program will put "Hello World" on your terminal.
-echo "Hello World"
+echo "Hello, World!"

@@ -3,9 +3,9 @@
 
 printfn "Hello, World!" /* printfn is built-in function */
 
-/* System.Console.WriteLine("Hello World")    [> this also works like above<] */
+/* System.Console.WriteLine("Hello, World!")    [> this also works like above<] */
 
 
 /* open System   */
-/* Console.WriteLine("Hello World") */
+/* Console.WriteLine("Hello, World!") */
 /* this using open System */

@@ -19,4 +19,4 @@ _start:   mov       rax, 1                  ; write system call
           syscall                           ; operating system exit
 
           section   .data
-message:  db        "Hello, World", 10      ; message and newline
+message:  db        "Hello, World!", 10      ; message and newline

@@ -11,4 +11,4 @@ fn main() {
 // for an explanation on macros : https://doc.rust-lang.org/book/ch19-06-macros.html
 
 // Output :
-// Hello, world!
+// Hello, World!
