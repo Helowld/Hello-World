@@ -1,11 +1,5 @@
 # Hello-World
-An attempt to create Hello-World program in all available programming languages
-
-## What you will gain by contributing here?
-
-- How to contribute to open source
-- Version Control
-- Overall, a great learning experience for y'all!
+An attempt to create Hello-World program in all available programming languages, and extra info and fun fact about them
 
 ## How to contribute?
 
